@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="style/style.css">
+    <!-- Liens vers les polices -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Votre feuille de style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../style/css/style.css">
     
 </head>
 <body>
-    <h1>bonjour</h1>
-    <include class=header src="Header.html"></include>
-    <include src="Footer.html"></include>    
+    <div class="main-container">
+        <div class="header">
+            <img class="logo" src="../asset/images/logo/ohmyfood@2x.svg" alt="Un ptit creux ?">
+
+            <form action="#" method="get"class="formulaire"> 
+                <button type="submit" class="fa-solid fa-location-dot"></button>
+                <input type="text" name="ville" id="ville" class="input-ville" placeholder="Votre lieu...">
+            </form>
+
+            <section class="acceuil">
+                <h1> Réservez le menu qui vous convient</h1>
+                <p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <a href="#restaurants" class="restaurants">Explorer nos restaurants</a>
+            </section>
+
+            <section class="Fonction">
+                <h1>Fonctionnement</h1>
+                <ol class="fonct-ordre">
+                    <li class="ordre 1">Choisissez un restaurant</li>
+                    <li class="ordre 2">Composez votre menu</li>
+                    <li class="ordre 3">Dégustez au restaurant</li>
+                </ol>
+            </section>
+        </div>
+
+
+
+    </div>
+ 
 </body>
 </html>
+
+
+<!--    <include  src="./Header.html"></include>
+<h1>bonjour</h1>
+
+<include src="./Footer.html"></include>   -->
