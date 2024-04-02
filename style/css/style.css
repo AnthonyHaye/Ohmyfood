@@ -46,4 +46,23 @@ button {
   background-color: #d2d2d2;
 }
 
+.resto {
+  background-color: #99e2d0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  background-color: #008766;
+}
+
+.card {
+  background-color: #89c8fa;
+  margin: 0.5rem;
+}
+
+.card-content {
+  background-color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
