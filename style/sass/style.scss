@@ -1,13 +1,13 @@
 /******************Général************************/
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 $primaire: #9356DC;
 $secondaire: #ff79da;
 $tertiaire: #99e2d0;
 $green1: #008766;
-$main: #d2d2d2;
+$main: #EAEAEA;
 $bleuclair: #89c8fa;
 $bleufoncé:#003a68;
 $bodycolor:#fff;
@@ -39,8 +39,8 @@ header{
 .formulaire{
     background-color: $main;
     box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset;
-    width: 96%;
-    padding: 0.5rem;
+    width: 92%;
+    padding: 1rem;
     margin: 0rem;
     border: none;
     display: flex;
@@ -60,7 +60,9 @@ header{
 }
 
 .acceuil{
-    width: 99%;
+    background-color: $main;
+    box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset; ;
+    width: 92%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,15 +92,89 @@ p{
     color: $bodycolor;
     font-weight: bold;    
     background: linear-gradient(200deg, $primaire -5%, $secondaire 100%);
-    box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
     border-radius: 2rem;
     border: none;
     padding: 0 1rem;
     cursor: pointer;
 }
 
+.Fonction {
+    width: 92%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ol{
+    padding: 0px;
+}
+
+/* Encercle la numérotation */
+.fonct-ordre {
+    list-style-type: none;
+    .ordre {
+        display: flex;
+        align-items: center; // Aligne les éléments verticalement
+        margin-bottom: 50px; // Ajoute un espace entre chaque élément de la liste
+        
+        .card__box__icon {
+            margin-right: 30px; // Ajoute un espacement entre l'icône et le texte
+        }
+    }
+  }
+  
+  /* fond coloré derrière la numérotation */
+  .fonct-ordre li {
+    counter-increment: custom-counter;
+    position: relative;
+    padding-left: 30px; /* Ajuste l'espace pour que le texte ne soit pas caché par le cercle */
+  }
+  
+  .fonct-ordre li::before {
+    content: counter(custom-counter);
+    display: inline-block;
+    color: #fff;
+    width: 20px; /* Ajuste la taille du cercle */
+    height: 20px; /* Ajuste la taille du cercle */
+    border-radius: 50%; /* Assurez-vous que le cercle soit rond */
+    text-align: center;
+    line-height: 20px; /* Centrez verticalement le numéro */
+    background-color: $primaire; /* Couleur de fond du cercle */
+    position: absolute;    
+    left: -16px; /* Déplacez le cercle vers la gauche */
+    top: 50%; /* Centrez verticalement le cercle */
+    transform: translateY(-50%); /* Centrez verticalement le cercle */
+  }
+  
+  /* Supprimez le point après le numéro */
+  .fonct-ordre li::after {
+    content: none;
+  }
+
+  li{
+    width: 80%;
+    background-color: $main;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem 1rem;
+  }
 
 
+
+.fa-store{
+    color: $primaire;
+}
+
+.resto__cards{
+    width: 92%;
+    padding: 1rem;
+    background-color: $main;
+    
+}
+  
 img{
     width: 100%;
 }

@@ -7,7 +7,6 @@
     <!-- Liens vers les polices -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Votre feuille de style CSS -->
     <script src="https://kit.fontawesome.com/920e080568.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/css/style.css">
     
@@ -19,7 +18,7 @@
 
             <form action="#" method="get" class="formulaire"> 
                 <button type="submit" class="fa-solid fa-location-dot fa-2xl"></button>
-                <input type="text" name="ville" id="ville" class="input-ville" placeholder="Votre lieu...">
+                <input type="text" name="ville" id="ville" class="input-ville" placeholder="Paris, Belleville">
             </form>
 
             <section class="acceuil">
@@ -31,15 +30,24 @@
             <section class="Fonction">
                 <h2>Fonctionnement</h2>
                 <ol class="fonct-ordre">
-                    <li class="ordre 1">Choisissez un restaurant</li>
-                    <li class="ordre 2">Composez votre menu</li>
-                    <li class="ordre 3">Dégustez au restaurant</li>
+                    <li class="ordre 1">
+                        <i class="card__box__icon fa-solid fa-mobile-screen-button"></i>
+                        Choisissez un restaurant
+                    </li>
+                    <li class="ordre 2">
+                        <i class="card__box__icon fa-solid fa-list"></i>
+                        Composez votre menu
+                    </li>
+                    <li class="ordre 3">
+                        <i class="card__box__icon fa-solid fa-store"></i>
+                        Dégustez au restaurant
+                    </li>
                 </ol>
             </section>
         </header>
 
-        <div class="resto cards">            
-            <h1 id="restaurants">Restaurants</h1>
+        <div class="resto__cards">            
+            <h2 id="restaurants">Restaurants</h2>
             <div class="card">
                 <a href="./lesRestaurants/laPaletteDuGout.html">
                     <img src="../asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de la chambre fred kleber">
