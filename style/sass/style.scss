@@ -15,14 +15,18 @@ $bodycolor:#fff;
 
 body{
     background:$bodycolor;
-    width: 96%;
     display: flex;
     justify-content: center;
-    border: 0px;
+    margin: 0px;
 }
 .main-container{
-    border: 0px;
     width: 100%;
+}
+
+.standard-frame{
+    width: 92%;
+    padding: 1rem;
+    margin: 0px;
 }
 
 header{
@@ -30,102 +34,89 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    .logo{
+        width: 55%;
+        margin: 0.5rem;
+    }
+    .formulaire{
+        background-color: $main;
+        box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset;       
+        border: none;
+        display: flex;
+        justify-content: center;
 
-.logo{
-    width: 55%;
-    margin: 0.5rem;
-}
-.formulaire{
-    background-color: $main;
-    box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset;
-    width: 92%;
-    padding: 1rem;
-    margin: 0rem;
-    border: none;
-    display: flex;
-    justify-content: center;
-
-}
-
-.fa-location-dot{
-    background-color: $main;
-    padding: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.input-ville{
-    border: none;
+        .fa-location-dot{
+            background-color: $main;
+            padding: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+        .input-ville{
+            border: none;
+        }
+    }
 }
 
 .acceuil{
     background-color: $main;
-    box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset; ;
-    width: 92%;
+    box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset;     
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-}
+    
 
-h1{
-    width: 75%;
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem;
-}
+    h1{
+        width: 75%;
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem;
+    }
 
-p{
-    width: 90%;
-    font-size: 1.2rem;
-    text-align: center;
-}
+    p{
+        width: 90%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
 
-
-.btn-resto {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    font-size: 16px;
-    text-decoration: none;
-    color: $bodycolor;
-    font-weight: bold;    
-    background: linear-gradient(200deg, $primaire -5%, $secondaire 100%);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
-    border-radius: 2rem;
-    border: none;
-    padding: 0 1rem;
-    cursor: pointer;
+    .btn-resto {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+        text-decoration: none;
+        color: $bodycolor;
+        font-weight: bold;    
+        background: linear-gradient(200deg, $primaire -5%, $secondaire 100%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+        border-radius: 2rem;
+        border: none;
+        padding: 0 1rem;
+        cursor: pointer;
+    }
 }
 
 .Fonction {
-    width: 92%;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    
-}
 
-ol{
-    padding: 0px;
-}
+    ol{
+        padding: 0px;
+    }
 
-/* Encercle la numérotation */
-.fonct-ordre {
+    /* Encercle la numérotation */
+    .fonct-ordre {
     list-style-type: none;
-    .ordre {
-        display: flex;
-        align-items: center; // Aligne les éléments verticalement
-        margin-bottom: 50px; // Ajoute un espace entre chaque élément de la liste
-        
-        .card__box__icon {
-            margin-right: 30px; // Ajoute un espacement entre l'icône et le texte
+        .ordre {
+            display: flex;
+            align-items: center; // Aligne les éléments verticalement
+            margin-bottom: 50px; // Ajoute un espace entre chaque élément de la liste
+            
+            .card__box__icon {
+                margin-right: 30px; // Ajoute un espacement entre l'icône et le texte
+            }
         }
     }
-  }
-  
-  /* fond coloré derrière la numérotation */
+      /* fond coloré derrière la numérotation */
   .fonct-ordre li {
     counter-increment: custom-counter;
     position: relative;
@@ -148,35 +139,166 @@ ol{
     transform: translateY(-50%); /* Centrez verticalement le cercle */
   }
   
-  /* Supprimez le point après le numéro */
-  .fonct-ordre li::after {
-    content: none;
-  }
+    /* Supprimez le point après le numéro */
+    .fonct-ordre li::after {
+        content: none;
+    }
 
-  li{
-    width: 80%;
-    background-color: $main;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 2rem 1rem;
-  }
-
-
-
-.fa-store{
-    color: $primaire;
+    li{
+        width: 80%;
+        background-color: $main;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 2rem 1rem;
+    }  
+    .fa-store{
+        color: $primaire;
+    }
 }
 
-.resto__cards{
-    width: 92%;
-    padding: 1rem;
-    background-color: $main;
+.resto__cards {
+    background-color: $main; 
+    .card{
+        background-color: $bodycolor;
+        border-radius: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        .laPaletteDuGout {
+            position: relative;
+            img{
+                width: 100%;
+                height: 200px;
+                border-radius: 1rem 1rem 0rem 0rem;
+              }
+            .annotation {
+            background-color: $tertiaire;
+            color: $green1;
+            position: absolute;
+            right: 10px;
+            top: 10px;; /* Ajustez la position horizontale de l'annotation selon vos besoins */
+            width: 80px;
+            height: 29px;
+            padding: 5px; /* Espace à l'intérieur de l'annotation */
+            border-radius: 5px; /* Bord arrondi de l'annotation */
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            font-size: 16px; /* Taille de la police de l'annotation */
+            text-align: center;
+            line-height: 29px;
+            }
+        }        
+    }
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-between;
+}
+.marg02{
+    margin: 0.2rem;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.heart__icon {    
+    width: 2.5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative; // Ajout pour positionner les pseudo-éléments par rapport à ce conteneur
     
+    .fa-heart {
+        position: absolute;
+        font-size: 2em; // Taille de police ajustée pour remplir l'intérieur de l'icône
+        transition: color 400ms; // Ajout de la transition pour l'effet de remplissage
+    }
+
+    .heart__icon--empty {
+        color: black;
+    }
+
+    .heart__icon--full {
+        color: transparent; // Rend l'intérieur de l'icône transparent pour le remplissage
+       
+    }
+
+    &:hover {
+        .heart__icon--full {
+            color: $primaire; // Change la couleur de remplissage au survol
+        }
+
+        .heart__icon--empty {
+            opacity: 0;
+        }
+    }
 }
+
+
+
+/*
+.opacity {
+    margin:300px auto;
+    display: flex;
+    width: 75%;
+    align-items: center !important;
+    justify-content: center !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
   
-img{
-    width: 100%;
-}
+      .btn200 {
+        border-radius: 25px;
+        background-color: $primaire;
+        font-size: 45px !important;
+        padding: 30px 45px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        &:hover {
+          border-radius: 25px;
+            &::after {
+              border-radius: 25px;
+                opacity: 1;
+            }
+        }
+        &::after {
+          border-radius: 25px;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: radial-gradient(circle, lighten($primaire, 5) 0%, darken($primaire, 10) 100%);
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+        }
+    }
+    }*/
+  
+
+
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
 
 

@@ -16,18 +16,18 @@
         <header class="header">
             <img class="logo" src="../asset/images/logo/ohmyfood@2x.svg" alt="Un ptit creux ?">
 
-            <form action="#" method="get" class="formulaire"> 
+            <form action="#" method="get" class="standard-frame formulaire"> 
                 <button type="submit" class="fa-solid fa-location-dot fa-2xl"></button>
                 <input type="text" name="ville" id="ville" class="input-ville" placeholder="Paris, Belleville">
             </form>
 
-            <section class="acceuil">
+            <section class="standard-frame acceuil">
                 <h1> Réservez le menu qui vous convient</h1>
                 <p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <a href="#restaurants" class="btn btn-resto">Explorer nos restaurants</a>
             </section>
 
-            <section class="Fonction">
+            <section class="standard-frame Fonction">
                 <h2>Fonctionnement</h2>
                 <ol class="fonct-ordre">
                     <li class="ordre 1">
@@ -46,24 +46,33 @@
             </section>
         </header>
 
-        <div class="resto__cards">            
+        <div class="image-container">
+            
+          </div>
+          
+
+        <div class="standard-frame resto__cards">            
             <h2 id="restaurants">Restaurants</h2>
             <div class="card">
                 <a href="./lesRestaurants/laPaletteDuGout.html">
-                    <img src="../asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de la chambre fred kleber">
-                    <p class="nouveau">Nouveau</p>
+                    <div class="photo laPaletteDuGout">
+                        <img src="asset/images/restaurants/LaPaletteDuGout.jpg" alt="Description de l'image">
+                        <div class="annotation">Nouveau</div>
+                    </div>
                     <div class="card-content">
                         <div class="card-txt">
-                            <h2 class="card-title">La palette du goût</h2>
+                            <h3 class="card-title">La palette du goût</h3>
                             <p class="card-subtitle">Ménilmontant</p>
                         </div>
-                        <div class="like">                            
+                        <div class="heart__icon">
                             <i class="fa-regular fa-heart fa-2x heart__icon--empty"></i>
                             <i class="fa-solid fa-heart fa-2x heart__icon--full"></i>
                         </div>
                     </div>
                 </a>
             </div>
+            
+            
 
             <div class="card">
                 <a href="./lesRestaurants/LaNoteEnchantee.html">
@@ -105,7 +114,7 @@
                     
                     <div class="card-content">
                         <div class="card-txt">
-                            <h2 class="card-title">Le délice des sens</h2>
+                            <h2 class="marg02 card-title">Le délice des sens</h2>
                             <p class="card-subtitle">Folie-Méricourt</p>
                         </div>
                         <div class="like">                            
