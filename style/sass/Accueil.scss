@@ -18,20 +18,22 @@
         font-size: 1.2rem;
         text-align: center;
     }
+    
+}
 
-    .btn-resto {
-        display: flex;
-        align-items: center;
-        height: 50px;
-        font-size: 16px;
-        text-decoration: none;
-        color: $bodycolor;
-        font-weight: bold;
-        background: linear-gradient(200deg, $primaire -5%, $secondaire 100%);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
-        border-radius: 2rem;
-        border: none;
-        padding: 0 1rem;
-        cursor: pointer;
-    }
+.btn-resto {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    color: $bodycolor;
+    font-weight: bold;
+    background: linear-gradient(200deg, $primaire -5%, $secondaire 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+    border-radius: 2rem;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
 }
