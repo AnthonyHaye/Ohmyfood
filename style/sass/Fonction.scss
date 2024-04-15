@@ -1,0 +1,62 @@
+/******************Fonction************************/
+.Fonction {
+    display: flex;
+    flex-direction: column;
+
+    ol {
+        padding: 0;
+    }
+
+    .fonct-ordre {
+        list-style-type: none;
+
+        .ordre {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .card__box__icon {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .fonct-ordre li {
+        counter-increment: custom-counter;
+        position: relative;
+        padding-left: 30px;
+    }
+
+    .fonct-ordre li::before {
+        content: counter(custom-counter);
+        display: inline-block;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        background-color: $primaire;
+        position: absolute;
+        left: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .fonct-ordre li::after {
+        content: none;
+    }
+
+    li {
+        width: 80%;
+        background-color: $main;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 2rem 1rem;
+    }
+
+    .fa-store {
+        color: $primaire;
+    }
+}

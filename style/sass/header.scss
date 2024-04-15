@@ -1,0 +1,31 @@
+/******************Header************************/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        width: 55%;
+        margin: 0.5rem;
+    }
+
+    .formulaire {
+        background-color: $main;
+        box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset;
+        border: none;
+        display: flex;
+        justify-content: center;
+
+        .fa-location-dot {
+            background-color: $main;
+            padding: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .input-ville {
+            border: none;
+        }
+    }
+}

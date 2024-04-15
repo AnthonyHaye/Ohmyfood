@@ -1,0 +1,38 @@
+/******************Resto************************/
+.resto__cards {
+    background-color: $main;
+
+    .card {
+        background-color: $bodycolor;
+        border-radius: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .laPaletteDuGout {
+            position: relative;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+                border-radius: 1rem 1rem 0rem 0rem;
+            }
+
+            .annotation {
+                background-color: $tertiaire;
+                color: $green1;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 80px;
+                height: 29px;
+                padding: 5px;
+                border-radius: 5px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+                font-size: 16px;
+                text-align: center;
+                line-height: 29px;
+            }
+        }
+    }
+}

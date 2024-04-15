@@ -1,0 +1,34 @@
+/******************Heart Icon************************/
+.heart__icon {
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .fa-heart {
+        position: absolute;
+        font-size: 2em;
+        transition: color 400ms;
+    }
+
+    .heart__icon--empty {
+        color: black;
+    }
+
+    .heart__icon--full {
+        color: transparent;
+    }
+
+    &:hover {
+        .heart__icon--full {
+            color: $primaire;
+        }
+
+        .heart__icon--empty {
+            opacity: 0;
+        }
+    }
+}

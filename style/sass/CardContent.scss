@@ -1,0 +1,19 @@
+/******************Card Content************************/
+.card-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-txt {
+    margin: 1rem;
+}
+
+.card-title,
+.card-subtitle {
+    margin: 0;
+    padding: 2px;
+}
+
+.marg02 {
+    margin: 0.2rem;
+}
