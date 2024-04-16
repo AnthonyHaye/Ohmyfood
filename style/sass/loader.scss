@@ -1,0 +1,70 @@
+@import 'Variables';
+
+.main-container {   
+    animation: site 900ms $site-delay both;
+}
+
+@keyframes site{
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.progress58{
+    width: 96%;
+    height: 20px;
+    &__bar{        
+        transform-origin: left ;
+        transform: scaleX(0.5);
+        animation: progress58__bar $prog-bar-dur $prog-bar-delay both cubic-bezier(.9,0,.1,1);  
+    }
+}
+
+.progress58__bar{
+    background-color: $primaire;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    animation: progress58__bar 5s cubic-bezier(.9, 0, .1, 1) both, // Animation pour la barre de progression
+    hide-progress-bar 5s cubic-bezier(.9, 0, .1, 1) forwards; // Animation pour la disparition de la barre
+}
+
+@keyframes hide-progress-bar {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; // Masque la barre après la disparition
+    }
+}
+
+
+@keyframes progress58__bar {
+    0% {
+        transform: scaleX(0);
+        opacity: 0.1;
+        
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+        animation-timing-function: cubic-bezier(.9,0,.1,1);
+    }
+    46% {
+        transform: scaleX(.81);
+        animation-timing-function: cubic-bezier(.25,0.25,1);
+    }
+    85%,100% {
+        opacity: 1;
+    }
+    100% {        
+        transform: scaleX(1);
+
+    }
+}

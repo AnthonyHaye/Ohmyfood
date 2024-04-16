@@ -1,0 +1,48 @@
+/****************************animation**************************/
+@import 'Variables';
+
+
+.Myfood {                                   // Sélecteur pour l'élément de menu.    
+    &__item {                               // Sélecteur pour les éléments du menu.       
+       /* background: $bodycolor;             // Utilisation de la couleur blanche comme couleur de fond pour les éléments du menu.*/
+        animation: Myfood__item 4000ms cubic-bezier(.1,.9,.1,1) both; // Application de l'animation 'Myfood__item' avec une durée de 810 millisecondes et une fonction de temporisation cubique, s'appliquant aux états 'forward' et 'backward'.
+        position: relative;                 // Définition de la position relative pour les éléments du menu.       
+        &--1 {                              // Sélecteur pour le premier élément du menu.
+            animation-delay: 1475ms;        // Définition du délai de l'animation pour le premier élément du menu.
+            > div {                         // Sélecteur pour les éléments enfants des éléments du menu.
+                animation-delay: 1712ms;    // Définition du délai de l'animation pour les éléments enfants du premier élément du menu.
+            }
+        }
+        &--2 {                                 // Sélecteur pour le deuxième élément du menu.
+            animation-delay: 2546ms;            // Définition du délai de l'animation pour le deuxième élément du menu.
+            > div {                             // Sélecteur pour les éléments enfants des éléments du menu.
+                animation-delay: 2805ms;        // Définition du délai de l'animation pour les éléments enfants du deuxième élément du menu.
+            }
+        }
+        &--3 {                                  // Sélecteur pour le troisième élément du menu.
+            animation-delay: 2632ms;            // Définition du délai de l'animation pour le troisième élément du menu.
+            > div {                             // Sélecteur pour les éléments enfants des éléments du menu.
+                animation-delay: 2914ms;        // Définition du délai de l'animation pour les éléments enfants du troisième élément du menu.
+            }
+        }
+        &--4 {                                      // Sélecteur pour le troisième élément du menu.
+            animation-delay: 2852ms;                // Définition du délai de l'animation pour le troisième élément du menu.
+            > div {                                 // Sélecteur pour les éléments enfants des éléments du menu.
+                animation-delay: 3014ms;            // Définition du délai de l'animation pour les éléments enfants du troisième élément du menu.
+            }
+        }
+        &--5 {                                      // Sélecteur pour le troisième élément du menu.
+            animation-delay: 2982ms;                // Définition du délai de l'animation pour le troisième élément du menu.
+            > div {                                 // Sélecteur pour les éléments enfants des éléments du menu.
+                animation-delay: 3254ms;            // Définition du délai de l'animation pour les éléments enfants du troisième élément du menu.
+            }
+        }
+    }
+}
+
+@keyframes Myfood__item {               // Définition de l'animation 'menu__item'.
+    0% {                                // État initial de l'animation.
+        transform: translateX(-110%);    // Translation de -110% sur l'axe des X.
+    }
+}
+

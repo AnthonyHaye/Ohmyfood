@@ -7,3 +7,8 @@ $main: #EAEAEA;
 $bleuclair: #89c8fa;
 $bleufoncé: #003a68;
 $bodycolor: #fff;
+$dur: 10000ms; // Définition de la variable $dur avec une durée de 10000 millisecondes pour les animations.
+$delay: 10000ms; // Définition de la variable $delay avec un délai de 10000 millisecondes pour les animations.
+$prog-bar-dur: 1000ms;
+$prog-bar-delay: 300ms;
+$site-delay: $prog-bar-dur + $prog-bar-delay;

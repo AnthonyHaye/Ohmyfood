@@ -36,4 +36,10 @@
     border: none;
     padding: 0 1rem;
     cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; // Ajout de la transition pour une animation fluide
+    
+    &:hover {
+        background: linear-gradient(200deg, lighten($primaire, 10%) -5%, lighten($secondaire, 10%) 100%); // Éclaircit la couleur de fond au survol
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6); // Augmente la visibilité de l'ombre portée au survol
+    }
 }

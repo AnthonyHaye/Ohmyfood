@@ -47,6 +47,8 @@
     }
     &__carte{
         background-color: $bodycolor;
+        position: relative;
+        cursor: pointer;        
         width: 80%;
         padding: 1rem;
         margin: 0.5rem;
@@ -63,6 +65,21 @@
             font-size: 0.9rem;
             font-weight: bold;
         }
+        .ajout__plat{         
+            width: 20px;
+            height: 20px;
+            opacity: 0%;
+            transition: transform 300ms ease-in-out;
+            transform-origin: right;
+            transform: translateX(20rem);
+        }
+        &:hover .ajout__plat{
+            opacity: 100%;
+            transform: translateX(0.25rem);
+            .fa-circle-check {
+                color: green;
+            }
+        }
         
     }
 }
@@ -71,6 +88,8 @@
     align-items: center;
     justify-content: space-between;  
 }
+
+
 
 .commander{
     display: flex;
