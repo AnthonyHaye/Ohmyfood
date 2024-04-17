@@ -37,7 +37,25 @@ header {
   justify-content: center;
   align-items: center;
 }
+header .header__logo {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header__logo .fa-solid {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+header .header__logo .logo {
+  width: 100%;
+  height: 2rem;
+}
 header .formulaire {
+  width: 100%;
   background-color: #EAEAEA;
   box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.15) inset;
   border: none;
@@ -51,22 +69,8 @@ header .formulaire .fa-location-dot {
   cursor: pointer;
 }
 header .formulaire .input-ville {
-  border: none;
-}
-
-.logo {
-  width: 55%;
-  margin: 1rem;
-}
-
-.header__logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.header__logo .fa-solid {
-  margin-right: 2rem;
+  background-color: #EAEAEA;
+  color: black;
 }
 
 /******************Accueil************************/
@@ -400,6 +404,9 @@ footer a {
 .Myfood__item--5 > div {
   animation-delay: 3254ms;
 }
+.Myfood.Restaurant__item {
+  animation-duration: 2000ms;
+}
 
 @keyframes Myfood__item {
   0% {
@@ -435,6 +442,11 @@ footer a {
   width: 100%;
   height: 100%;
   animation: progress58__bar 5s cubic-bezier(0.9, 0, 0.1, 1) both, hide-progress-bar 5s cubic-bezier(0.9, 0, 0.1, 1) forwards;
+}
+@media screen and (min-width: 768px) {
+  .progress58__bar {
+    background-color: #000;
+  }
 }
 
 @keyframes hide-progress-bar {

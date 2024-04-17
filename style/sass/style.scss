@@ -11,5 +11,9 @@
 @import 'animation';
 @import 'loader';
 @import 'check';
+@import 'mixins';
+@import './mediaqueries/mobile.scss';
+@import './mediaqueries/tablet.scss';
+@import './mediaqueries/desktop.scss';
 
 

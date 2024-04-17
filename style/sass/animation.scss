@@ -38,6 +38,11 @@
             }
         }
     }
+    &.Restaurant { // Classe spécifique pour les pages de restaurant
+        &__item {
+            animation-duration: 2000ms; // Réduction de la durée de l'animation à 2000ms (2 secondes)
+        }
+    }
 }
 
 @keyframes Myfood__item {               // Définition de l'animation 'menu__item'.

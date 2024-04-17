@@ -1,4 +1,5 @@
 @import 'Variables';
+@import 'mixins.scss';
 
 .main-container {   
     animation: site 900ms $site-delay both;
@@ -25,6 +26,9 @@
 
 .progress58__bar{
     background-color: $primaire;
+    @include tablet-only {
+        background-color: #000;
+    }
     margin: auto;
     width: 100%;
     height: 100%;
