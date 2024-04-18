@@ -69,6 +69,7 @@ header .formulaire .fa-location-dot {
   cursor: pointer;
 }
 header .formulaire .input-ville {
+  border: none;
   background-color: #EAEAEA;
   color: black;
 }
