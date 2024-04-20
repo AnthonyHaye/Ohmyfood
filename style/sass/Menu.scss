@@ -1,8 +1,11 @@
 /**************Menu********************/
+@import 'Variables';
+
 .menu{
     display: flex;
     flex-direction: column;
 }
+
 .imgMenu{
     img{
     object-fit: cover;
@@ -25,7 +28,7 @@
     }      
 }
 
-.Entrée {
+.Entrée, .Plat, .Dessert {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,25 +67,10 @@
         &__prix{
             font-size: 0.9rem;
             font-weight: bold;
-        }
-        .ajout__plat{         
-            width: 20px;
-            height: 20px;
-            opacity: 0%;
-            transition: transform 300ms ease-in-out;
-            transform-origin: right;
-            transform: translateX(20rem);
-        }
-        &:hover .ajout__plat{
-            opacity: 100%;
-            transform: translateX(0.25rem);
-            .fa-circle-check {
-                color: green;
-            }
-        }
-        
+        }        
     }
 }
+
 .option__prix{
     display: flex;    
     align-items: center;
@@ -91,16 +79,66 @@
 
 
 
+.green-box {         
+    border-radius: 1rem;
+    position: relative;
+    cursor: pointer;        
+    width: 90%;
+    margin: 0.5rem;
+    background-color: $tertiaire;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.ellip{   
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.blue-box {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;   
+    background-color: $bodycolor;
+    transition: background-color 0.3s, color 0.3s; /* Ajout de transition */
+}
+
+.retract{
+    overflow: hidden;
+    position: relative;
+    transition: width 0.5s ease-in-out, border-top-right-radius 0.5s ease-in-out, border-bottom-right-radius 0.5s ease-in-out;
+}
+
+.blue-box:hover {
+    width: calc(100% - 6rem);
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+   // background-color: blue; /* Changement de couleur de fond au survol */
+}
+
+.check-icon {
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.blue-box:hover + .check-icon {
+    right: 1.5rem;
+    opacity: 1;
+    color: green1;
+}
+
 .commander{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 92%;
-    margin: 1rem;
+    margin: 1rem;    
 }
-
-
-
 
 
 
