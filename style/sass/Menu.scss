@@ -4,6 +4,7 @@
 
 
 .imgMenu{
+    width: 100%;
     img{
     object-fit: cover;
     position: relative;
@@ -48,7 +49,7 @@
     }
 }
 
-.Entrée, .Plat, .Dessert {
+.Entre, .Plat, .Dessert {
     width: 100%;
     display: flex;
     flex-direction: column;

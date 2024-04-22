@@ -3,10 +3,7 @@
 
 .card-content {
     display: flex;
-    justify-content: space-between;
-    @include tablet-only{
-        justify-content: center;
-    }
+    justify-content: space-between; 
 }
 
 .card-txt {
@@ -22,3 +19,4 @@
 .marg02 {
     margin: 0.2rem;
 }
+

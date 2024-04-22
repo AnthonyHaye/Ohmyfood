@@ -2,27 +2,21 @@
 @import 'mixins';
 
 .heart__icon {
-    margin-right: 1rem;
+    margin: 1rem;
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    @include tablet-only{
-        margin: 1rem;
-    }
-
+    position: relative;    
     .fa-heart {
         position: absolute;
         font-size: 2rem;
         transition: color 400ms;
     }
-
     .heart__icon--empty {
         color: black;
     }
-
     .heart__icon--full {
         color: transparent;
     }
@@ -31,7 +25,6 @@
         .heart__icon--full {
             color: $primaire;
         }
-
         .heart__icon--empty {
             opacity: 0;
         }

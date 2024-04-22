@@ -72,7 +72,6 @@ header .formulaire {
   justify-content: center;
 }
 header .formulaire .fa-location-dot {
-  background-color: #EAEAEA;
   padding: 1rem;
   border: none;
   cursor: pointer;
@@ -129,10 +128,6 @@ header .formulaire .input-ville {
 .Fonction {
   display: flex;
   flex-direction: column;
-  /*  h2{
-        padding-left: 1rem;
-        margin: 0;
-    }*/
 }
 @media screen and (min-width: 768px) {
   .Fonction {
@@ -288,11 +283,6 @@ header .formulaire .input-ville {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
-  .card-content {
-    justify-content: center;
-  }
-}
 
 .card-txt {
   margin: 1rem;
@@ -310,18 +300,13 @@ header .formulaire .input-ville {
 
 /******************Heart Icon************************/
 .heart__icon {
-  margin-right: 1rem;
+  margin: 1rem;
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .heart__icon {
-    margin: 1rem;
-  }
 }
 .heart__icon .fa-heart {
   position: absolute;
@@ -384,6 +369,9 @@ footer .lienfooter {
 
 /**************Menu********************/
 /******************Variables************************/
+.imgMenu {
+  width: 100%;
+}
 .imgMenu img {
   object-fit: cover;
   position: relative;
@@ -431,7 +419,7 @@ footer .lienfooter {
   }
 }
 
-.Entrée, .Plat, .Dessert {
+.Entre, .Plat, .Dessert {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -439,16 +427,16 @@ footer .lienfooter {
   align-items: center;
   position: relative;
 }
-.Entrée__titre, .Plat__titre, .Dessert__titre {
+.Entre__titre, .Plat__titre, .Dessert__titre {
   text-transform: uppercase;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .Entrée__titre, .Plat__titre, .Dessert__titre {
+  .Entre__titre, .Plat__titre, .Dessert__titre {
     width: 88%;
   }
 }
-.Entrée__titre::after, .Plat__titre::after, .Dessert__titre::after {
+.Entre__titre::after, .Plat__titre::after, .Dessert__titre::after {
   content: "";
   position: absolute;
   left: 0.5rem;
@@ -457,7 +445,7 @@ footer .lienfooter {
   height: 2px;
   background-color: #99e2d0;
 }
-.Entrée__carte, .Plat__carte, .Dessert__carte {
+.Entre__carte, .Plat__carte, .Dessert__carte {
   background-color: #fff;
   position: relative;
   cursor: pointer;
@@ -466,20 +454,20 @@ footer .lienfooter {
   margin: 0.5rem;
   border-radius: 1rem;
 }
-.Entrée__carte__name, .Plat__carte__name, .Dessert__carte__name {
+.Entre__carte__name, .Plat__carte__name, .Dessert__carte__name {
   font-size: 1.2rem;
   margin: 0;
 }
-.Entrée__carte__details, .Plat__carte__details, .Dessert__carte__details {
+.Entre__carte__details, .Plat__carte__details, .Dessert__carte__details {
   font-size: 0.9rem;
   margin: 0;
 }
-.Entrée__carte__prix, .Plat__carte__prix, .Dessert__carte__prix {
+.Entre__carte__prix, .Plat__carte__prix, .Dessert__carte__prix {
   font-size: 0.9rem;
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {
-  .Entrée, .Plat, .Dessert {
+  .Entre, .Plat, .Dessert {
     width: 60%;
   }
 }
