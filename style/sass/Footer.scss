@@ -1,20 +1,43 @@
 
 
 /******************Footer************************/
+
+@import 'mixins';
+
 footer {
     background-color: #353535;
     color: $bodycolor;
     display: flex;
     flex-direction: column;
+    @include tablet-only{
+        flex-direction: row-reverse;
+        align-items: stretch;
+
+    }
 
     p {
         font-family: 'Shrikhand';
         font-size: 18px;
         margin-top: 0;
+        @include tablet-only{
+            margin-right: 4rem;
+    
+        }
     }
 
     a {
         padding: 5px;
         color: $bodycolor;
+    }
+    i{
+        padding-right: 1rem;
+    }
+    .lienfooter{
+        display: flex;
+        flex-direction: column;
+        @include tablet-only{
+            flex-direction: row;
+            margin-right: 4rem;
+        }
     }
 }

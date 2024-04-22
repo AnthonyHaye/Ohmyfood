@@ -2,7 +2,7 @@
 /******************Variables************************/
 /******************Général************************/
 * {
-  /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /*border: 1px solid black;*/
 }
 
@@ -15,13 +15,21 @@ body {
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 .standard-frame {
-  width: 92%;
-  padding: 1rem;
+  width: 96%;
+  padding: 0.5rem;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .standard-frame {
+    width: 100%;
+  }
 }
 
 /******************Lien************************/
@@ -36,6 +44,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 header .header__logo {
   width: 100%;
@@ -120,6 +129,16 @@ header .formulaire .input-ville {
 .Fonction {
   display: flex;
   flex-direction: column;
+  /*  h2{
+        padding-left: 1rem;
+        margin: 0;
+    }*/
+}
+@media screen and (min-width: 768px) {
+  .Fonction {
+    width: 80%;
+    font-size: 0.85rem;
+  }
 }
 .Fonction ol {
   padding: 0;
@@ -127,13 +146,31 @@ header .formulaire .input-ville {
 .Fonction .fonct-ordre {
   list-style-type: none;
 }
+@media screen and (min-width: 768px) {
+  .Fonction .fonct-ordre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .Fonction .fonct-ordre .ordre {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 1rem;
+  margin-top: 0px;
 }
-.Fonction .fonct-ordre .ordre .card__box__icon {
+@media screen and (min-width: 768px) {
+  .Fonction .fonct-ordre .ordre {
+    width: 20%;
+  }
+}
+.Fonction .fonct-ordre .card__box__icon {
   margin-right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .Fonction .fonct-ordre .card__box__icon {
+    margin-right: 8px;
+  }
 }
 .Fonction .fonct-ordre li {
   counter-increment: custom-counter;
@@ -174,6 +211,37 @@ header .formulaire .input-ville {
 .resto__cards {
   background-color: #EAEAEA;
 }
+@media screen and (min-width: 768px) {
+  .resto__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
+.resto__cards .frameCard {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .resto__cards .frameCard {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .resto__cards .frameCard2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .resto__cards .card {
   background-color: #fff;
   border-radius: 1rem;
@@ -188,6 +256,11 @@ header .formulaire .input-ville {
   width: 100%;
   height: 200px;
   border-radius: 1rem 1rem 0rem 0rem;
+}
+@media screen and (min-width: 768px) {
+  .resto__cards .card .laPaletteDuGout img {
+    height: 150px;
+  }
 }
 .resto__cards .card .laPaletteDuGout .annotation {
   background-color: #99e2d0;
@@ -204,11 +277,21 @@ header .formulaire .input-ville {
   text-align: center;
   line-height: 29px;
 }
+@media screen and (min-width: 768px) {
+  .resto__cards .card {
+    width: 45%;
+  }
+}
 
 /******************Card Content************************/
 .card-content {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .card-content {
+    justify-content: center;
+  }
 }
 
 .card-txt {
@@ -229,15 +312,20 @@ header .formulaire .input-ville {
 .heart__icon {
   margin-right: 1rem;
   width: 2.5rem;
-  height: auto;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .heart__icon {
+    margin: 1rem;
+  }
+}
 .heart__icon .fa-heart {
   position: absolute;
-  font-size: 2em;
+  font-size: 2rem;
   transition: color 400ms;
 }
 .heart__icon .heart__icon--empty {
@@ -260,32 +348,58 @@ footer {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+}
 footer p {
   font-family: "Shrikhand";
   font-size: 18px;
   margin-top: 0;
 }
+@media screen and (min-width: 768px) {
+  footer p {
+    margin-right: 4rem;
+  }
+}
 footer a {
   padding: 5px;
   color: #fff;
 }
-
-/**************Menu********************/
-/******************Variables************************/
-.menu {
+footer i {
+  padding-right: 1rem;
+}
+footer .lienfooter {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  footer .lienfooter {
+    flex-direction: row;
+    margin-right: 4rem;
+  }
+}
 
+/**************Menu********************/
+/******************Variables************************/
 .imgMenu img {
   object-fit: cover;
   position: relative;
   width: 100%;
   height: 300px;
 }
+@media screen and (min-width: 768px) {
+  .imgMenu {
+    width: 100%;
+  }
+}
 
 .menu {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #EAEAEA;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -295,6 +409,26 @@ footer a {
   font-family: "Shrikhand";
   font-size: 1.5rem;
   padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    transform: translate(0rem, -2rem);
+    /* h1{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }*/
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .menu__heading {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
 }
 
 .Entrée, .Plat, .Dessert {
@@ -309,11 +443,16 @@ footer a {
   text-transform: uppercase;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .Entrée__titre, .Plat__titre, .Dessert__titre {
+    width: 88%;
+  }
+}
 .Entrée__titre::after, .Plat__titre::after, .Dessert__titre::after {
   content: "";
   position: absolute;
-  left: 1rem;
-  bottom: 0.5rem;
+  left: 0.5rem;
+  bottom: 0.1rem;
   width: 2.5rem;
   height: 2px;
   background-color: #99e2d0;
@@ -338,6 +477,11 @@ footer a {
 .Entrée__carte__prix, .Plat__carte__prix, .Dessert__carte__prix {
   font-size: 0.9rem;
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .Entrée, .Plat, .Dessert {
+    width: 60%;
+  }
 }
 
 .option__prix {
@@ -395,7 +539,7 @@ footer a {
 .blue-box:hover + .check-icon {
   right: 1.5rem;
   opacity: 1;
-  color: green1;
+  color: #008766;
 }
 
 .commander {
@@ -511,7 +655,7 @@ footer a {
   }
   46% {
     transform: scaleX(0.81);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 0.1, 1);
   }
   85%, 100% {
     opacity: 1;

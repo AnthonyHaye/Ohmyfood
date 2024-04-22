@@ -1,7 +1,18 @@
 /******************Fonction************************/
+@import 'mixins';
+
 .Fonction {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    @include tablet-only {
+        width: 80%;
+        font-size: 0.85rem;
+    }
+    
+  /*  h2{
+        padding-left: 1rem;
+        margin: 0;
+    }*/
 
     ol {
         padding: 0;
@@ -9,16 +20,30 @@
 
     .fonct-ordre {
         list-style-type: none;
+      
+        @include tablet-only {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         .ordre {
             display: flex;
             align-items: center;
-            margin-bottom: 50px;
-
-            .card__box__icon {
-                margin-right: 30px;
+            margin-bottom: 1rem;
+            margin-top: 0px;
+            @include tablet-only {
+                width: 20%;   
+                        
             }
-        }
+        }      
+
+        .card__box__icon {
+            margin-right: 30px;
+            @include tablet-only {
+                margin-right: 8px;                        
+            }
+        }        
     }
 
     .fonct-ordre li {

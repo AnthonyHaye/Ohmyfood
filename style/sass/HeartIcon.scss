@@ -1,16 +1,21 @@
 /******************Heart Icon************************/
+@import 'mixins';
+
 .heart__icon {
     margin-right: 1rem;
     width: 2.5rem;
-    height: auto;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    @include tablet-only{
+        margin: 1rem;
+    }
 
     .fa-heart {
         position: absolute;
-        font-size: 2em;
+        font-size: 2rem;
         transition: color 400ms;
     }
 

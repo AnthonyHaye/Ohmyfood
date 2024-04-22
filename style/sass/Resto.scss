@@ -1,6 +1,37 @@
 /******************Resto************************/
+@import 'mixins';
 .resto__cards {
     background-color: $main;
+    
+        @include tablet-only {
+            width: 100%;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 1rem;   
+            font-size: 0.85rem;            
+        } 
+        
+       
+        .frameCard{
+            width: 100%;  
+            @include tablet-only {
+                width: 80%;                
+                display: flex; 
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;                     
+            }        
+        }
+        .frameCard2{
+            @include tablet-only {
+                width: 100%;      
+                display: flex;          
+                flex-direction: row;
+                flex-wrap: wrap;  
+                justify-content: space-between;                     
+            }
+        }
 
     .card {
         background-color: $bodycolor;
@@ -16,6 +47,9 @@
                 width: 100%;
                 height: 200px;
                 border-radius: 1rem 1rem 0rem 0rem;
+                @include tablet-only{
+                    height: 150px;
+                }
             }
 
             .annotation {
@@ -33,6 +67,11 @@
                 text-align: center;
                 line-height: 29px;
             }
+        }
+        @include tablet-only {
+            width: 45%; 
+                  
+            
         }
     }
 }

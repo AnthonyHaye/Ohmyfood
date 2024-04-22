@@ -1,31 +1,51 @@
 /**************Menu********************/
 @import 'Variables';
+@import 'mixins';
 
-.menu{
-    display: flex;
-    flex-direction: column;
-}
 
 .imgMenu{
     img{
     object-fit: cover;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 300px;    
+    }
+    @include tablet-only{
+        width: 100%;
     }
 }
 
 .menu{    
     width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: $main;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    transform: translate(0rem, -5rem);
+    transform: translate(0rem, -5rem);    
     h1{
         font-family: 'Shrikhand';
         font-size: 1.5rem;
         padding-left: 1rem;
-    }      
+    }  
+    @include tablet-only{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        transform: translate(0rem, -2rem); 
+       /* h1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }*/
+    }    
+    .menu__heading{
+        @include tablet-only{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+    }
 }
 
 .Entrée, .Plat, .Dessert {
@@ -34,15 +54,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;    
+    position: relative;
+     
     &__titre {
         text-transform: uppercase;
-        position: relative;        
+        position: relative;      
+        @include tablet-only{
+            width: 88%;
+        }  
         &::after {
             content: '';
             position: absolute;
-            left: 1rem;
-            bottom: 0.5rem;
+            left: 0.5rem;
+            bottom: 0.1rem;
             width: 2.5rem;
             height: 2px;
             background-color: $tertiaire;
@@ -68,6 +92,9 @@
             font-size: 0.9rem;
             font-weight: bold;
         }        
+    }
+    @include tablet-only{
+        width: 60%;
     }
 }
 
@@ -129,7 +156,7 @@
 .blue-box:hover + .check-icon {
     right: 1.5rem;
     opacity: 1;
-    color: green1;
+    color: $green1;
 }
 
 .commander{

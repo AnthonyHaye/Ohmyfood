@@ -62,7 +62,7 @@
     }
     46% {
         transform: scaleX(.81);
-        animation-timing-function: cubic-bezier(.25,0.25,1);
+        animation-timing-function: cubic-bezier(.25,0.25,.1,1);
     }
     85%,100% {
         opacity: 1;

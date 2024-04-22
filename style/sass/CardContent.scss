@@ -1,7 +1,12 @@
 /******************Card Content************************/
+@import 'mixins';
+
 .card-content {
     display: flex;
     justify-content: space-between;
+    @include tablet-only{
+        justify-content: center;
+    }
 }
 
 .card-txt {
