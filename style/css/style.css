@@ -313,6 +313,7 @@ header .formulaire .input-ville {
 .heart__icon .fa-heart {
   position: absolute;
   font-size: 2rem;
+  transition: color 2000ms;
 }
 .heart__icon .heart__icon--empty {
   color: black;
@@ -395,7 +396,8 @@ footer .lienfooter {
   background-color: #EAEAEA;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  transform: translate(0rem, -5rem);
+  position: relative;
+  margin-top: -2rem;
 }
 .menu h1 {
   font-family: "Shrikhand";

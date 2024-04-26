@@ -23,7 +23,9 @@
     background-color: $main;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    transform: translate(0rem, -5rem);    
+    //transform: translate(0rem, -5rem);    
+    position: relative;
+    margin-top: -2rem;
     h1{
         font-family: 'Shrikhand';
         font-size: 1.5rem;
